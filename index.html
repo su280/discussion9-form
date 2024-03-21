@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Submit Recommendations</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Add a favicon -->
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <div class="radio">
+            <label>Area of Submission:</label><br>
+            <div>
+                <input type="radio" id="travel" name="interest" value="travel" required>
+                <label for="travel">Travel</label>
+            </div>
+            <div>
+                <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+                <label for="recipe">Recipe</label>
+            </div>
+            <div>
+                <input type="radio" id="pets" name="interest" value="pets">
+                <label for="pets">Pets</label>
+            </div>
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <label for="image">Upload Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </form>
+    <main id="main-content">
+        <!-- Main content goes here -->
+    </main>
+</body>
+</html>
